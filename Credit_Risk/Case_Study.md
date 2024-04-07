@@ -1,24 +1,21 @@
-# Module 12 Report Template
-
-## Overview of the Analysis
+### Overview of the Analysis
 
 The primary objective of this analysis is to employ Logistic Regression, a powerful regression analysis technique tailored for predicting the probability of a binary outcome using multiple predictor variables. Specifically, this study harnesses lending data containing essential financial metrics such as 'loan_size', 'interest_rate', 'borrower_income', 'debt_to_income', 'num_of_accounts', 'derogatory_marks', and 'loan_status'. The overarching goal is to assess the creditworthiness of borrowers by accurately predicting the likelihood of a borrower being categorized based on their financial attributes.
 
-The process for the logistic regression analysis over lending data is as follows:
-1.) Load in data for 'lending_data.csv'
-    a.) Identify our target variable vs features
-    b.) Split the data into training and testing dataset by using 'train_test_split' from sklearn.model_selection library
+#### Process for the Logistic Regression Analysis:
+1. **Load Data**: Load the 'lending_data.csv' dataset.
+    - Identify target variable and features.
+    - Split the data into training and testing datasets using 'train_test_split' from the sklearn.model_selection library.
 
-2.) Create a Logistic Regression Model
-    a.) From sklearn.linear_model, import Logistic Regression package to instantiate the model 
-    b.) Fit the model using our trained features and labels
-    c.) Make prediction using the testing data 
+2. **Create Logistic Regression Model**:
+    - Instantiate the Logistic Regression model from sklearn.linear_model.
+    - Fit the model using the training features and labels.
+    - Make predictions using the testing data.
 
-3.) Measure the model evaluation by using the classification report
-    a.) Identify how the model is performing by utilizing precision, recall and F1-scores
+3. **Model Evaluation**:
+    - Utilize classification report to assess model performance, focusing on precision, recall, and F1-scores.
 
-
-## Results
+### Results
 
 **Machine Learning Model 1:**
 - Accuracy score: 99%
@@ -31,9 +28,9 @@ The process for the logistic regression analysis over lending data is as follows
         - Recall: 89%
         - F1-score: 88%
 
-## Summary
+### Summary
 
-Overall, the classification report performs very well, with high precision, recall and F1-score for both classes. The model is very good at predicting healthy loans; however, predicting high-risk loans can lead to some potential risk. 
+Overall, the classification report demonstrates excellent performance, with high precision, recall, and F1-scores for both classes. The model effectively predicts healthy loans, achieving perfect precision, recall, and F1-score. However, there is a slight variability in predicting high-risk loans, indicating potential risk in misclassification.
 
-For healthy loans, the model predicts 100% precision, recall and F1-score which indicates that all instances classified as 'healthy loans' were actually 'healthy loans', all 'healthy loans' were correctly identified and there is a perfect balance between precision and recall.
-For high-risk loans, the model's precision is 87% which indicates that 87% of instances classified as 'high-risk loans' were actually 'high-risk loans'. For recall for high-risk loans, the recall is 89% with indicates that 89% of 'high-risk loans' instances were correctly identified. Lastly, with a F1-score of 88% for high-risk score, there is some variability between the balance of precision and recall. 
+- **Healthy Loans**: The model exhibits perfect precision, recall, and F1-score, signifying accurate identification of all healthy loan instances with a perfect balance between precision and recall.
+- **High-Risk Loans**: Although the precision is 87%, indicating that 87% of high-risk loan classifications are accurate, there is room for improvement in recall (89%) and F1-score (88%), indicating some variability in the balance between precision and recall.
