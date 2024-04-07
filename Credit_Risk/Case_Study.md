@@ -20,17 +20,16 @@ The process for the logistic regression analysis over lending data is as follows
 
 ## Results
 
-Machine Learning Model 1:
-Accurary score: 99%
-    ♦ Healthy Loan(0)
+**Machine Learning Model 1:**
+- Accuracy score: 99%
+    - **Healthy Loan (0)**
         - Precision: 100%
-        - Recall:    100%
-        - F1-score:  100%
-    ♦ High-Risk Loan(1)
-        - Precision:  94%
-        - Recall:     89%
-        - F1-score:   88%
-
+        - Recall: 100%
+        - F1-score: 100%
+    - **High-Risk Loan (1)**
+        - Precision: 94%
+        - Recall: 89%
+        - F1-score: 88%
 
 ## Summary
 
