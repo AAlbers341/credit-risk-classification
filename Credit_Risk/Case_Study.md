@@ -26,7 +26,6 @@ Accurary score: 99%
         - Precision: 100%
         - Recall:    100%
         - F1-score:  100%
-
     ♦ High-Risk Loan(1)
         - Precision:  94%
         - Recall:     89%
